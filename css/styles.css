@@ -1,34 +1,45 @@
 body{
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
+    text-align: center;
 }
 
-#title{
+h1, h2, h3, h4, h5, h6 {  
+    font-family: 'Montserrat';
+    font-weight: 900;
+}
+
+p{
+    color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading{
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid{
+    padding: 7% 12%;
+}
+
+/* Sections */
+
+.color-section{
     background-color: #ff4c68;
     color: white;
 }
 
-h1 {  
-    font-family: "Montserrat";
-    font-size: 3.5rem;
-    line-height: 1.5;
-    font-weight: 900;
-    
-}
-
-h2{
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.5;
-}
-
-
-h3{
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.container-fluid{
-    padding: 3% 15% 6%;
+.white-section{
+    background-color: white;
 }
 
 /* Navigation bar */
@@ -52,9 +63,20 @@ h3{
     font-family: "Montserrat";
 }
 
+/* Buttons */
+
 .download-button{
     margin: 5% 3% 5% 0;
 }
+
+/* Title Section */
+
+#title .container-fluid{
+    padding: 3% 12%;
+    text-align: left;
+}
+
+/* Title Image */
 
 .title-image{
     width: 20%;
@@ -63,20 +85,17 @@ h3{
     right: 23%;
 }
 
-p{
-    color: #8f8f8f;
-}
-
 /* Features Section */
 
 #features{
-    padding: 7% 12%;
-    background-color: #fff;
     position: relative;
 }
 
+.feature-title{
+    font-size: 1.5rem;
+}
+
 .feature-box{
-    text-align: center;
     padding: 4.5%;
 }
 
@@ -93,15 +112,12 @@ p{
 /* Testimonial Section */
 
 #testimonials{
-
-    text-align: center;
     background-color: #ef8172;
-    color: #fff;
-
 }
 
-.carousel-item{
-    padding: 7% 15%;
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .testimonial-image{
@@ -123,13 +139,19 @@ p{
 
 /* Pricing */
 
+
+
 #pricing{
     padding: 100px;
-    text-align: center;
 }
 
 .pricing-column{
     padding: 3% 2%;
+}
+
+.pricing-text{
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 @media (max-width: 1052px){
@@ -143,24 +165,6 @@ p{
         transform: rotate(0);
         width: 50%;
     }
-}
-
-#cta{
-    background-color: #ff4c68;
-    text-align: center;
-    color: white;
-    padding: 5% 12%;
-}
-
-.message{
-    font-size: 3.5rem;
-    line-height: 1.5;
-    padding-bottom: 2%;
-}
-
-#footer{
-    text-align: center;
-    padding: 5% 12%;
 }
 
 .text-footer{
